@@ -11,7 +11,7 @@
                         /* bots are dumb*/
                         window.onload = function() {
                                 for (let a of document.getElementsByTagName('a')) {
-                                        a.outerHTML=a.outerHTML.replace(/<a href="mailto:(\w*) at (\w*) (\w*)">\w* at \w* \w*<\/a>/,'<a href="mailto:$1@$2.$3">$1@$2.$3</a>');
+                                        a.outerHTML=a.outerHTML.replace(/<a href="mailto:(\w*)-at-(\w*)-(\w*)">\w* at \w* \w*<\/a>/,'<a href="mailto:$1@$2.$3">$1@$2.$3</a>');
                                 }
                         };
   </script>
